@@ -1,8 +1,12 @@
 # STS Algorithm & Problem Collection
 
+Made with ❤️ by **Anwesha Pal**  
+
 Welcome to my **STS (Short / Teaching / Simple) Algorithm & Problem Collection** repository!  
 
-This repository contains **easier/brute-force versions** of popular algorithms and problems, implemented in **Java**. Each file is named according to the algorithm or problem it implements. These codes are ideal for learning, understanding, or quickly testing concepts.
+This repository contains **easy / brute-force implementations** of popular algorithms and problems in **Java**. Each file is named according to the algorithm or problem it implements.  
+
+> If you find this repo helpful, please ⭐ **star this repo** for easy reference!  
 
 ---
 
@@ -49,16 +53,15 @@ This repository contains **easier/brute-force versions** of popular algorithms a
 
 ## Features
 
-- All codes are implemented in **Java**.
-- Focused on **easier / brute-force methods** to understand the core logic.
-- Can be used for **learning, teaching, or competitive programming practice**.
-- Each file is named according to the algorithm/problem it implements.
+- All codes are in **Java**.
+- Focused on **easy / brute-force methods** for understanding core logic.
+- Ideal for **learning, teaching, and competitive programming practice**.
+- File names correspond directly to the **algorithm/problem implemented**.
 
 ---
 
-> ⚠️ **Note:** These implementations prioritize **simplicity and clarity** over extreme performance. Optimized versions exist for most algorithms, but these are meant for **learning and teaching purposes**.
+> ⚠️ **Note:** These implementations prioritize **simplicity and clarity** over extreme performance.
 
 ---
 
-Feel free to **explore, learn, and contribute**!
-
+Made with ❤️ by **Anwesha Pal** – Please ⭐ **star this repo** if you find it useful!

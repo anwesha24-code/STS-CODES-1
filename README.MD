@@ -1,6 +1,6 @@
 # 🚀 STS Algorithm & Problem Collection
 
-Welcome to my **STS (Short / Teaching / Simple) Algorithm & Problem Collection** repository!  
+Welcome to my **STS Algorithm & Problem Collection** repository!  
 
 This repository contains **easy / brute-force implementations** of popular algorithms and problems in **Java**. Each file is named according to the algorithm or problem it implements.  
 

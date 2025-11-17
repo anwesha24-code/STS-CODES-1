@@ -1,4 +1,4 @@
-# STS Algorithm & Problem Collection
+# 🚀 STS Algorithm & Problem Collection
 
 Made with ❤️ by **Anwesha Pal**  
 
@@ -6,11 +6,21 @@ Welcome to my **STS (Short / Teaching / Simple) Algorithm & Problem Collection**
 
 This repository contains **easy / brute-force implementations** of popular algorithms and problems in **Java**. Each file is named according to the algorithm or problem it implements.  
 
-> If you find this repo helpful, please ⭐ **star this repo** for easy reference!  
+> If you find this repo helpful, please ⭐ **star this repo** for easy reference!
 
 ---
 
-## Table of Contents / Complexity Overview
+## 🏷️ Features
+
+- ✅ Implemented in **Java**
+- 🧠 Focused on **easy / brute-force methods** for understanding core logic
+- 📚 Ideal for **learning, teaching, and competitive programming**
+- 📂 File names correspond directly to the **algorithm/problem implemented**
+- ⚠️ **Note:** These implementations prioritize **simplicity and clarity** over extreme performance
+
+---
+
+## 📊 Table of Contents / Complexity Overview
 
 | # | Algorithm / Problem | Brute-Force TC | Optimized TC | Space | Notes |
 |---|-------------------|----------------|--------------|-------|-------|
@@ -51,17 +61,12 @@ This repository contains **easy / brute-force implementations** of popular algor
 
 ---
 
-## Features
+## 🎯 Quick Highlights
 
-- All codes are in **Java**.
-- Focused on **easy / brute-force methods** for understanding core logic.
-- Ideal for **learning, teaching, and competitive programming practice**.
-- File names correspond directly to the **algorithm/problem implemented**.
-
----
-
-> ⚠️ **Note:** These implementations prioritize **simplicity and clarity** over extreme performance.
+- All codes are **short, easy-to-read, and beginner-friendly**.
+- Optimized solutions exist for most algorithms, but these prioritize **clarity over speed**.
+- Great for **teaching, learning, or practicing coding problems**.
 
 ---
 
-Made with ❤️ by **Anwesha Pal** – Please ⭐ **star this repo** if you find it useful!
+Made with ❤️ by **Anwesha Pal** – **star this repo** ⭐ if it helped you!

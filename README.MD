@@ -1,7 +1,5 @@
 # 🚀 STS Algorithm & Problem Collection
 
-Made with ❤️ by **Anwesha Pal**  
-
 Welcome to my **STS (Short / Teaching / Simple) Algorithm & Problem Collection** repository!  
 
 This repository contains **easy / brute-force implementations** of popular algorithms and problems in **Java**. Each file is named according to the algorithm or problem it implements.  

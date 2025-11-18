@@ -12,7 +12,7 @@ public class Main {
             soln[i][j] = 1;
 
             // Move down or right
-            if (solve(maze, i + 1, j, n, m, soln) || solve(maze, i, j + 1, n, m, soln))
+            if (solve(maze, i + 1, j, n, m, soln) || solve(maze, i, j + 1, n, m, soln)||solve(maze, i, j - 1, n, m, soln)||solve(maze, i-1, j, n, m, soln))
                 return true;
 
             // Backtrack

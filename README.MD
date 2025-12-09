@@ -20,42 +20,45 @@ This repository contains **easy / brute-force implementations** of popular algor
 
 ## 📊 Table of Contents / Complexity Overview
 
-| # | Algorithm / Problem | Brute-Force TC | Optimized TC | Space | Notes |
-|---|-------------------|----------------|--------------|-------|-------|
-| 1 | Euler Phi / Totient | O(n log n) | O(n log log n) | O(n) | Count coprime numbers |
-| 2 | Booth Algorithm | O(n²) | O(n) | O(n) | Lexicographic minimal rotation |
-| 3 | Chinese Remainder Theorem (CRT) | O(M * n) | O(n) | O(n) | Solve x ≡ a[i] (mod m[i]) |
-| 4 | Strobogrammatic | O(5ⁿ) | O(1) per number | O(n) | Generate strobogrammatic numbers |
-| 5 | Segmented Sieve | O(n log log n) | Same | O(sqrt(n)) | Primes in range [L,R] |
-| 6 | Incremental / Simple Sieve | O(n log log n) | Same | O(n) | Basic prime generation |
-| 7 | Euclid (GCD) | O(min(a,b)) | O(log max(a,b)) | O(1) | Recursive or iterative |
-| 8 | Block Swap / Array Rotation | O(n²) | O(n) | O(1) | Rotate array by blocks |
-| 9 | Combinations | O(n! / (r!(n-r)!)) | O(n*r) | O(r) | Backtracking / DP |
-| 10 | Permutations | O(n!) | O(n!) | O(n) | Recursive or iterative |
-| 11 | Max Equilibrium Sum | O(n²) | O(n) | O(1) | Prefix sum optimization |
-| 12 | Max Product Subarray | O(n²) | O(n) | O(1) | Track max/min product |
-| 13 | Max Sum in Hourglass | O(n²*m²) | O(n*m) | O(1) | Sliding window sum |
-| 14 | Binary Palindrome | O(n*log n) | O(log n) | O(log n) | Convert & check bits |
-| 15 | Manacher Algorithm | O(n²) | O(n) | O(n) | Longest palindromic substring |
-| 16 | Maneuvering / Paths in Grid | O(2^(m+n)) | O(m*n) | O(m*n) | Count paths |
-| 17 | Longest Subsequence of 1 after Flip | O(n²) | O(n) | O(1) | Sliding window technique |
-| 18 | Selection Sort | O(n²) | O(n²) | O(1) | Standard selection sort |
-| 19 | QuickSort | O(n²) | O(n log n) | O(log n) | Average-case fast sorting |
-| 20 | Lexicographic Palindrome | O(n!*n) | O(n + alphabet) | O(n) | Generate smallest palindrome |
-| 21 | Natural Sort | O(n log n) | O(n log n) | O(n) | Sort strings numerically |
-| 22 | Warnsdorff / Knight’s Tour | O(8^n) | O(n²) | O(n²) | Heuristic for knight moves |
-| 23 | Move Hyphen to Beginning | O(n) | O(n) | O(n) | Count & reconstruct string |
-| 24 | Simple Sieve | O(n log log n) | Same | O(n) | Prime numbers generation |
-| 25 | Swap 2 Nibbles | O(1) | O(1) | O(1) | Bitwise manipulation |
-| 26 | Karatsuba | O(n²) | O(n^1.585) | O(n) | Fast multiplication |
-| 27 | Weighted Substring / Max Sum | O(n²) | O(n) | O(n) | Sliding window / prefix sum |
-| 28 | Majority Element | O(n²) | O(n) | O(1) | Boyer-Moore Voting Algorithm |
-| 29 | Maze Solving | O(2^(n*m)) | O(n*m) | O(n*m) | Backtracking / DP |
-| 30 | Leaders in Array | O(n²) | O(n) | O(1) | Traverse from right |
-| 31 | N Queens | O(n!) | O(n!) with pruning | O(n²) | Backtracking with safety check |
-| 32 | Kruskal | O(E log E) | Same | O(V + E) | MST using Union-Find |
-| 33 | Prims | O(V²) | O(E log V) | O(V + E) | MST using PriorityQueue |
-| 34 | Josephus Problem | O(n*k) | O(n) | O(n) | Recursive formula |
+| #  | Algorithm / Problem                     | Brute-Force TC          | Optimized TC              | Space       | Notes                                      |
+|----|------------------------------------------|--------------------------|---------------------------|-------------|---------------------------------------------|
+| 1  | Euler Phi / Totient                      | O(n log n)               | O(n log log n)            | O(n)        | Count coprime numbers                      |
+| 2  | Booth Algorithm                           | O(n²)                    | O(n)                      | O(n)        | Lexicographic minimal rotation              |
+| 3  | Chinese Remainder Theorem (CRT)          | O(M·n)                   | O(n)                      | O(n)        | Solve system of congruences                 |
+| 4  | Strobogrammatic Numbers                   | O(5ⁿ)                    | O(1) per number           | O(n)        | Mirror-digit numbers                        |
+| 5  | Segmented Sieve                           | O(n log log n)           | Same                      | O(√n)       | Primes in range [L, R]                      |
+| 6  | Simple/Incremental Sieve                  | O(n log log n)           | Same                      | O(n)        | Basic sieve                                 |
+| 7  | Euclid GCD                                | O(min(a, b))             | O(log max(a, b))          | O(1)        | Fast gcd computation                        |
+| 8  | Block Swap Array Rotation                 | O(n²)                    | O(n)                      | O(1)        | Rotate by blocks                            |
+| 9  | Combinations (nCr)                        | O(n!/(r!(n−r)!))         | O(n·r)                    | O(r)        | DP/backtracking                             |
+| 10 | Permutations                              | O(n!)                    | O(n!)                     | O(n)        | Generate all permutations                   |
+| 11 | Max Equilibrium Sum                       | O(n²)                    | O(n)                      | O(1)        | Prefix–sum method                           |
+| 12 | Max Product Subarray                      | O(n²)                    | O(n)                      | O(1)        | Track max/min product                       |
+| 13 | Hourglass Max Sum                         | O(n²·m²)                 | O(n·m)                    | O(1)        | Sliding window sum                          |
+| 14 | Binary Palindrome Check                   | O(n log n)               | O(log n)                  | O(log n)    | Bitwise palindrome                          |
+| 15 | Manacher’s Algorithm                      | O(n²)                    | O(n)                      | O(n)        | Longest palindromic substring               |
+| 16 | Paths in Grid (DP)                        | O(2^(m+n))               | O(m·n)                    | O(m·n)      | Count paths                                 |
+| 17 | Longest 1s After Flip                     | O(n²)                    | O(n)                      | O(1)        | Sliding window                              |
+| 18 | Selection Sort                            | O(n²)                    | O(n²)                     | O(1)        | Basic sorting                               |
+| 19 | QuickSort                                  | O(n²)                    | O(n log n)                | O(log n)    | Average-case fast sort                      |
+| 20 | Lexicographic Palindrome                  | O(n!·n)                  | O(n + alphabet)           | O(n)        | Smallest palindrome                         |
+| 21 | Natural Sort (Numeric Strings)            | O(n log n)               | O(n log n)                | O(n)        | Sort strings numerically                    |
+| 22 | Warnsdorff / Knight’s Tour                | O(8ⁿ)                    | O(n²)                     | O(n²)       | Knight move heuristic                       |
+| 23 | Move Hyphens to Start                     | O(n)                     | O(n)                      | O(n)        | String rearrangement                        |
+| 24 | Simple Sieve                               | O(n log log n)           | Same                      | O(n)        | Prime generation                            |
+| 25 | Swap Two Nibbles                          | O(1)                     | O(1)                      | O(1)        | Bit manipulation                            |
+| 26 | Karatsuba Multiplication                  | O(n²)                    | O(n^1.585)                | O(n)        | Fast multiplication                         |
+| 27 | Weighted Substring / Max Sum              | O(n²)                    | O(n)                      | O(n)        | Sliding window / prefix sums                |
+| 28 | Majority Element (Boyer–Moore Voting)     | O(n²)                    | O(n)                      | O(1)        | Majority vote algorithm                     |
+| 29 | Maze Solving (Backtracking)               | O(2^(n·m))               | O(n·m)                    | O(n·m)      | Backtracking / DP                           |
+| 30 | Leaders in Array                          | O(n²)                    | O(n)                      | O(1)        | Traverse from right                         |
+| 31 | N-Queens                                   | O(n!)                    | O(n!) with pruning        | O(n²)       | Backtracking                                |
+| 32 | Kruskal’s Algorithm                        | O(E log E)               | Same                      | O(V + E)    | MST using DSU                               |
+| 33 | Prim’s Algorithm                           | O(V²)                    | O(E log V)                | O(V + E)    | PriorityQueue implementation                |
+| 34 | Josephus Problem                           | O(n·k)                   | O(n)                      | O(n)        | Recurrence relation                         |
+| 35 | DSU / Union-Find                           | O(n²) if naive           | O(α(n)) ≈ constant        | O(n)        | Path compression + union by rank            |
+| 36 | Boyer–Moore String Search                 | O(n·m)                   | O(n + m)                  | O(m)        | Fast substring search                       |
+
 
 ---
 
